@@ -1,9 +1,11 @@
-# A Naked Hugo Template
+# Austin Freelance Jobs
 *built with [Hugo](https://gohugo.io)* by - [KristopherRay.com](https://kristopherray.com)  
 
-### You can see an demo running [here](https://anakedhugo.netlify.app/)
+### [AustinFreelanceJobs.com](https://anakedhugo.netlify.app/)
 
-This "template" *(I hate that word)* follows best-practices and preferences for my Hugo / Netlify workflow. It is a clean and lean foundation for all my new projects that leverages the familiar Bootstrap 5.1.3 grid framework and some misc. helpers, but stripped of the features I never use. Everything else is "naked" and ready for a custom development, the way the web should be <3. You can also steal my matching [Naked Figma Doc](https://www.figma.com/file/S00t2DMj4DhGItZTEyKqeD/Kristopher-Ray-Naked-Figma?type=design&node-id=0%3A1&mode=design&t=Du8L4JyYAdQ4k7v4-1) (It's similar but not the same and has a bunch of other neat stuff I use frequently- without the secret sauce, sorry thats in my head 🤯).
+The Official Austin, TX Freelancer Directory, built to facilitate and stimulate connections for our local freelance economy. Coupled with our official [Facebook](https://www.facebook.com/groups/austinfreelancejobs/) and Linkedin (coming soon) Groups, we will create a vibrant ecosystem for all to benefit from.
+
+Based on "template" *(I hate that word)* follows best-practices and preferences for my Hugo / Netlify workflow. It is a clean and lean foundation for all my new projects that leverages the familiar Bootstrap 5.1.3 grid framework and some misc. helpers, but stripped of the features I never use. Everything else is "naked" and ready for a custom development, the way the web should be <3. You can also steal my matching [Naked Figma Doc](https://www.figma.com/file/S00t2DMj4DhGItZTEyKqeD/Kristopher-Ray-Naked-Figma?type=design&node-id=0%3A1&mode=design&t=Du8L4JyYAdQ4k7v4-1) (It's similar but not the same and has a bunch of other neat stuff I use frequently- without the secret sauce, sorry thats in my head 🤯).
 
 *Packaged with:*
 - [All the original <3 Bootstrap](https://getbootstrap.com/) [5.1.3] *customized and minified*
