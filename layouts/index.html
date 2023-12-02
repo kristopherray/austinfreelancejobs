@@ -1,0 +1,98 @@
+{{ partial "head.html" . }}
+
+<body id="home">
+
+{{ partial "header.html" . }}
+
+
+<section id="banner" role="banner">
+
+    {{if .Params.banner_image}} 
+    <div class="banner-image bg-image"><img class="lazyload" data-src="{{.Params.banner_image}}" alt="{{ .Site.Params.Title }} {{ .Title }} Banner Background Image" /></div>
+    {{end}}
+
+    {{if .Params.banner_video}} 
+    <div class="banner-image bg-image video-wrapper">
+        <iframe title="{{ .Params.Site.Title }} Home Banner Background Video" class="lazyload" data-src="https://player.vimeo.com/video/{{.Params.banner_video}}?background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <script defer src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+    {{end}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-md-8 col-lg-8 bannerTxtCol">
+                <div class="bannerTxtBx animated fadeIn">
+                    <h2>
+                        {{if .Params.banner_title}}
+                        {{.Params.banner_title|safeHTML}}
+                        {{ else}}
+                        {{ .Title | safeHTML }}
+                        {{end}}
+                    </h2>
+
+                    {{if .Params.banner_tagline}}
+                    <div class="bannerTagline">
+                        {{.Params.banner_tagline | safeHTML}}
+                    </div>
+                    {{end}}
+
+                    {{if .Description }}
+                    <p>{{ .Description | safeHTML}}</p>
+                    {{end}}
+
+                    {{ if .Params.banner_btn_label}}
+                    <a class="button" href="{{.Params.banner_btn_link}}">{{.Params.banner_btn_label | safeHTML}}</a>
+                    {{end}}
+                    
+                    {{ if .Params.banner_link_label}}
+                    <div class="bannerLink">or <a href="{{.Params.banner_link}}">{{.Params.banner_link_label | safeHTML}}</a></div>
+                    {{end}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{{ partial "client-logos.html" . }}
+
+
+<main role="main" class="main-sections">
+    {{ partial "signup.html" .}}
+    {{ partial "page-sections.html" .}}
+</main>
+
+<div id="inquire" class="mfp-hide">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col text-center">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{{ partial "latest-news.html" . }}
+
+{{ partial "footer.html" . }}
+
+{{ partial "scripts.html" . }}
+
+<!-- Enable for NetlifyCMS -->
+{{/*  <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>  */}}
+
+</body>
+</html>
