@@ -344,6 +344,8 @@ form {
       margin-top:0;
       padding: 0;
       white-space: nowrap;
+      height:$line-height-desktop;
+      line-height:$line-height-desktop - 5px;
 
       @media(max-width:767px){
         height: $line-height-mobile;

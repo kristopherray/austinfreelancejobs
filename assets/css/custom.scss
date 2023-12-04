@@ -6,6 +6,8 @@ html, body {
   // background: url(/img/pattern.png);
   // background-size: 200px;
 
+  background: $default;
+
   ::selection {
     background: $default; /* WebKit/Blink Browsers */
     color:#fff;
@@ -47,6 +49,7 @@ section {
 
 main {
   padding: 60px 24px;
+  background: #fff;
 
   #logo {
     width:100%;
@@ -640,6 +643,7 @@ form {
 
 #clients {
   padding: 42px 0 32px;
+  background: #fff;
 
   .container-fluid {
     padding:0;
@@ -674,7 +678,11 @@ form {
 
 #signup {
   padding:2rem 0;
-  background:darken($default,5%);
+  background:$default;
+
+  .container {
+    max-width:1200px;
+  }
 
   h2 a {
     color: #fff;
@@ -701,7 +709,7 @@ form {
 
 footer {
   padding:3rem 0 10rem;
-  background: #000;
+  background: $default;
   color:#fff;
 
   #footerLogo {
