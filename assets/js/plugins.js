@@ -98,16 +98,6 @@ $(document).ready(function() {
   });
 
 
-
-// AOS
-AOS.init({
-    easing: 'ease-out-cubic',
-    duration: 1500,
-    mirror: false,
-    once: true,
-    offset: -200
-});
-
 // Magnific Popup
 $('.open-popup-link').magnificPopup({
     type:'inline',

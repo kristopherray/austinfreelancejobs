@@ -12,7 +12,8 @@ params:
   #instagram_link: https://www.instagram.com/
   #gtm: GTM-123456
   #paid_for: Paid for by Language - Kristopher Ray Creative
-  form_endpoint: 123456
+  form_endpoint: https://usebasin.com/f/7b653a25785f
+  form_signup: https://usebasin.com/f/fc1d6a914c12
 markup:
   goldmark:
     extensions:

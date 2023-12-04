@@ -41,3 +41,113 @@
         $('#entries').isotope('layout');
     });
 </script>
+
+<script>
+    $(document).ready(function () {
+        // Initial check on page load
+        checkReasonSelection();
+
+        // Attach event handler on select change
+        $('#reason').on('change', function () {
+            checkReasonSelection();
+        });
+
+        function checkReasonSelection() {
+            var selectedValue = $('#reason').val();
+            var freelancerFields = $('#freelancerFields');
+
+            // If Retail or Hospitality is selected, show the additional fields
+            if (selectedValue === 'freelancer') {
+                freelancerFields.show();
+                // Add 'required' attribute to the fields
+                freelancerFields.find('[name]').prop('required', true);
+            } else {
+                // Hide the additional fields if any other option is selected
+                freelancerFields.hide();
+                // Remove 'required' attribute from the fields
+                freelancerFields.find('[name]').prop('required', false);
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        // Initial check on page load
+        checkReasonSelectionJob();
+
+        // Attach event handler on select change
+        $('#reason').on('change', function () {
+            checkReasonSelectionJob();
+        });
+
+        function checkReasonSelectionJob() {
+            var selectedValue = $('#reason').val();
+            var jobFields = $('#jobFields');
+
+            // If Retail or Hospitality is selected, show the additional fields
+            if (selectedValue === 'job') {
+                jobFields.show();
+                // Add 'required' attribute to the fields
+                jobFields.find('[name]').prop('required', true);
+            } else {
+                // Hide the additional fields if any other option is selected
+                jobFields.hide();
+                // Remove 'required' attribute from the fields
+                jobFields.find('[name]').prop('required', false);
+            }
+        }
+    });
+    
+    $(document).ready(function () {
+        // Initial check on page load
+        checkReasonSelectionResource();
+
+        // Attach event handler on select change
+        $('#reason').on('change', function () {
+            checkReasonSelectionResource();
+        });
+
+        function checkReasonSelectionResource() {
+            var selectedValue = $('#reason').val();
+            var resourceFields = $('#resourceFields');
+
+            // If Retail or Hospitality is selected, show the additional fields
+            if (selectedValue === 'resource') {
+                resourceFields.show();
+                // Add 'required' attribute to the fields
+                resourceFields.find('[name]').prop('required', true);
+            } else {
+                // Hide the additional fields if any other option is selected
+                resourceFields.hide();
+                // Remove 'required' attribute from the fields
+                resourceFields.find('[name]').prop('required', false);
+            }
+        }
+    });
+    
+    $(document).ready(function () {
+        // Initial check on page load
+        checkReasonSelectionEverything();
+
+        // Attach event handler on select change
+        $('#reason').on('change', function () {
+            checkReasonSelectionEverything();
+        });
+
+        function checkReasonSelectionEverything() {
+            var selectedValue = $('#reason').val();
+            var everythingFields = $('#everythingFields');
+
+            // If Retail or Hospitality is selected, show the additional fields
+            if (selectedValue === 'other') {
+                everythingFields.show();
+                // Add 'required' attribute to the fields
+                everythingFields.find('[name]').prop('required', true);
+            } else {
+                // Hide the additional fields if any other option is selected
+                everythingFields.hide();
+                // Remove 'required' attribute from the fields
+                everythingFields.find('[name]').prop('required', false);
+            }
+        }
+    });
+</script>

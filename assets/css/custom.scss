@@ -24,6 +24,10 @@ h1,h2,h3,h4,h5 {
   font-weight:600 !important;
 }
 
+p {
+  line-height:1.25em;
+}
+
 section {
   position:relative;
   .container {
@@ -124,12 +128,24 @@ main {
       li {
         margin: 0 5px 0 0;
         padding: 3px;
-
+        font-weight: 700;
         a {
+          color: #333;
           &:hover, &:focus {
             text-decoration: underline;
           }
         }
+      }
+    }
+
+    ul {
+      list-style: none;
+      display:inline-block;
+      margin:0;
+      padding:0;
+
+      li {
+        display: inline-block;
       }
     }
 
@@ -162,26 +178,6 @@ main {
         }
       }
     }
-
-    ul {
-      list-style: none;
-      display:inline-block;
-      margin:0;
-      padding:0;
-
-      li {
-        display: inline-block;
-      }
-    }
-
-    .info {
-      li {
-        font-weight: 700;
-        a {
-          color: #333;
-        }
-      }
-    }
   
     .content {
       padding:40px;
@@ -200,6 +196,17 @@ main {
         }
       }
     }
+
+    .actions {
+      .entry-buttons {
+        @media(min-width:768px){
+          margin: 0 8px 0 0;
+        }
+        @media(max-width:767px){
+          margin: 0 8px 8px 0;
+        }
+      }
+    }
   }
 
 }
@@ -208,6 +215,26 @@ main {
   padding: 0;
   margin: 32px 0;
   display: block;
+
+  .news-image {
+    padding:0;
+    margin:0;
+    max-width:300px;
+
+    @media(max-width:767px){
+      margin-bottom:8px;
+      padding: 0 16px 16px 16px;
+      justify-content: left;
+    }
+  }
+
+  .d-flex {
+    flex-wrap: wrap;
+
+    @media(max-width:767px){
+      justify-content: left;
+    }
+  }
 
   img {
     border-radius: 8px;
@@ -236,7 +263,17 @@ main {
   }
 
   .content {
-    padding: 0 24px;
+    padding: 0 12px;
+  }
+
+  &.with-image {
+    .content {
+      padding: 0 24px;
+    }
+  }
+
+  p {
+    font-size:1em;
   }
 }
 
@@ -297,14 +334,19 @@ header {
 
     #toggle-menu {
       display:none;
-      font-size:1.25em;
-      padding:0 10px;
+      font-size:1em;
+      font-size:1em;
+      padding:10px;
       color:#fff;
       -webkit-transition: all .3s;
       -moz-transition: all .3s;
       -ms-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s;
+
+      i {
+        color: $yellow;
+      }
 
       &:hover, &:focus {
         background: $btn-color;
@@ -725,6 +767,13 @@ footer {
     }
   }
 
+  a {
+    &:hover, &:focus {
+      color: $yellow;
+      text-decoration: underline;
+    }
+  }
+
   #footerSocial {
     list-style:none;
     padding:0;
@@ -939,6 +988,22 @@ footer {
     
     .container {
 
+      h2, h3, h4, h5 {
+        margin-bottom:24px;
+      }
+
+      h2 {
+        font-size:48px;
+      }
+
+      h3 {
+        font-size:32px;
+      }
+
+      h4 {
+        font-size: 24px;
+      }
+
       p {
         margin: 8px 0;
 
@@ -988,6 +1053,115 @@ footer {
           left:0;
           top:0;
         }
+      }
+    }
+  }
+}
+
+#jobboard, #resources {
+  h2 {
+    text-align: center;
+  }
+
+  main {
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.mfp-close {
+  color:#fff !important;
+  top: -10px;
+}
+
+#submit {
+  h2, h3, p {
+    color:#fff;
+    text-align: center;
+  }
+
+  form {
+    margin-top:20px;
+
+    .button {
+      background: $yellow;
+      color:#111;
+      border-color: $yellow;
+    }
+  }
+
+  h2 img {
+    width:40px;
+    margin-top:-8px;
+    height:auto;
+    display:inline-block;
+  }
+
+  .fields {
+    padding:16px 0;
+  }
+}
+
+#launch-post {
+  main {
+    img {
+      max-width:200px;
+    }
+  }
+}
+
+.freelancer-single {
+
+  #banner {
+    .image {
+      max-width:300px;
+      margin:0 auto 24px;
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius: 150px;
+    }
+  }
+  .info {
+    padding:0;
+    margin: 8px 0 0 0;
+
+    li {
+      margin: 0 5px 0 0;
+      padding: 3px;
+      font-weight: 700;
+      a {
+        color: #111;
+        &:hover, &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    display:inline-block;
+    margin:0;
+    padding:0;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .actions {
+    .buttonOutline {
+      border: 2px solid #111 !important;
+    }
+    .entry-buttons {
+      @media(min-width:768px){
+        margin: 0 8px 0 0;
+      }
+      @media(max-width:767px){
+        margin: 0 8px 8px 0;
       }
     }
   }

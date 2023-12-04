@@ -14,6 +14,7 @@
                 <a href='{{ "/" | relURL }}' id="logo">{{ partial "logo.html" . }}</a>
                 <h1>Find Local Austin, TX <span>Freelancers</span></h1>
                 <p>Just a simple source for local independant contractor talent and jobs looking to fill short-term or freelance positions.</p>
+                <a href="#submit" class="button open-popup-link mt-3">Submit a Profile or Job &rsaquo;</a>
             </div>
         </div>
         
@@ -42,22 +43,11 @@
     {{ partial "page-sections.html" .}}
 </main>
 
-<div id="inquire" class="mfp-hide">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col text-center">
-                {{ .Content }}
-            </div>
-        </div>
-    </div>
-
-</div>
-
 {{ partial "latest-news.html" . }}
 
-{{ partial "client-logos.html" .}}
+{{/*  {{ partial "client-logos.html" .}}  */}}
+
+{{ partial "signup.html" .}}
 
 {{ partial "footer.html" . }}
 
