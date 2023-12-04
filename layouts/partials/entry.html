@@ -1,0 +1,87 @@
+<div class='col-12 entry {{ range (.GetTerms "tags") }}{{ .LinkTitle | lower | urlize }} {{ end }}'>
+
+    <div class="tags wrapper">
+        <ul>
+            {{ range (.GetTerms "tags") }}
+            <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <div class='overview {{if .Params.image }}with-image{{end}} wrapper'>
+        {{ if .Params.image }}
+        <img class='{{if .Params.image }}image{{end}} lazyload' data-src="{{ .Params.image }}"/>
+        {{end}}
+
+        <div>
+            {{ if .Content }}
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{else}}
+            <h2>{{ .Title }}</h2>
+            {{end}}
+    
+            <ul class="info">
+                {{ if .Params.phone }}
+                <li class="phone">
+                    <a href="tel:{{ .Params.phone | urlize }}" title="Call Now"><i class="fas fa-phone"></i>&nbsp;{{ .Params.phone }}</a>
+                </li>
+                {{end}}
+    
+                {{ if .Params.website }}
+                <li class="website">
+                    <a href="https://{{ .Params.website }}" target="_blank" title="View Website"><i class="fa-regular fa-globe-pointer"></i> &nbsp;{{ .Params.website }}</a>
+                </li>
+                {{end}}
+
+                {{if .Params.linkedin }}
+                <li><a href="{{ .Params.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
+                {{end}}
+    
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="actions wrapper">
+        {{ if .Params.website }}
+        <a href="{{ .Params.website }}/?utm_source=AustinFreelanceJobs" class="button inquire-button" target=_blank>Inquire Now &rsaquo;</a>
+        {{ end }}
+
+        <ul class="entry-buttons">
+            
+            <li class="share">
+                <button class="button" onclick="shareLink()"><i class="fa-solid fa-share"></i><span>&nbsp; Share Freelancer</span></button>
+            </li>
+            <input type="text" hidden value="{{.Permalink}}" id="{{ .Title | urlize }}">
+            <script>
+                function shareLink() {
+                    // Get the text field
+                    var copyText = document.getElementById("{{ .Title | urlize }}");
+                  
+                    // Select the text field
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999); // For mobile devices
+                  
+                     // Copy the text inside the text field
+                    navigator.clipboard.writeText(copyText.value);
+                  
+                    // Alert the copied text
+                    alert("Copied the text: " + copyText.value);
+                  }
+            </script>
+
+            {{/*  <li class="facebook">
+                <a class="button" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}?utm_source=AustinFreelanceJobs&utm_campaign=organic" target=_blank><i class="fab fa-facebook-square"></i><span>&nbsp; Share</span></a>
+            </li>
+
+            <li class="twitter">
+                <a class="button" href="https://twitter.com/intent/tweet?text={{ .Permalink }}" target=_blank><span>Post on&nbsp;</span> <i class="fa-brands fa-x-twitter"></i></a>
+            </li>  */}}
+            {{ if .Content }}
+            <li><a href="{{ .Permalink }}" class="button buttonOutline learn-more">Learn More</a></li>
+            {{ end }}
+        </ul>
+    </div>
+
+
+</div>

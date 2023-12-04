@@ -1,4 +1,4 @@
-<div class="entry col-12 mb-3">
+<div class="news-entry col-12">
     <div class="d-flex justify-content-center align-items-center">
         {{ if .Params.image }}
             <div class="col col-sm-4">
@@ -9,7 +9,8 @@
                 {{end}}
             </div>
         {{end}}
-        <div class="content col col-sm-8">
+
+        <div class="content col {{ if .Params.image }}col-sm-8{{else}}col-sm-12{{end}}">
 
 
             {{ if .Params.categories }}

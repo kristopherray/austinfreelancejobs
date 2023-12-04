@@ -1,7 +1,7 @@
 /* Default Variables */
-$header-font:proxima-nova, sans-serif;
+$header-font:"gelica", sans-serif;
 $body-font: proxima-nova, sans-serif;
-$button-font: proxima-nova, sans-serif;
+$button-font: "gelica", sans-serif;
 $base-fontsize: 16px;
 
 /* Form and Button Styling */
@@ -15,14 +15,16 @@ $input-padding-right: 7px;
 $input-padding-bottom: 7px;
 $input-padding-left: 7px;
 
-$max-width: 1200px;
+$max-width: 750px;
 $body-background: #fff;
 
 $transition: .25s;
 
 /* Colors */
-$default: #333;
+$default: #111;
 $light-grey: #555;
 $btn-color: $default;
 $facebook-blue: #3b5998;
 $twitter-blue: #1DA1F2;
+
+$yellow: #FFCE47;

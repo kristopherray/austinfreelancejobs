@@ -1,18 +1,20 @@
 <div id="preloader"></div>
 
 <header aria-label="header">
+    <div>
+        <a href='{{ "/" | relURL }}' id="headerLogo"><img src="/img/header-logo.svg" alt="Austin Freelance Jobs Abbreviated Logo"></a>
+    
+        <nav role="navigation" aria-label="menu">
+            <a href="javascript:void(0)" id="toggle-menu"><i class="fa fa-bars"></i>&nbsp; Menu</a>
+            <ul>
+                {{ partial "menu.html" . }}
+            </ul>
+        </nav>
+    </div>
 
-    <a href='{{ "/" | relURL }}' id="headerLogo"><img class="lazyload" data-src='{{ "img/logo.svg" | relURL }}' alt="{{ .Site.Title }} Logo"></a>
-
-    <nav role="navigation" aria-label="menu">
-        <a href="javascript:void(0)" id="toggle-menu"><i class="fa fa-bars"></i>&nbsp; Menu</a>
-        <ul>
-            {{ partial "menu.html" . }}
-            {{ partial "social.html" . }}
-            <li>
-                <a href="#formSection" class="button">Button &rsaquo;</a>
-            </li>
-        </ul>
-    </nav>
+    <ul id="headerRight">
+        {{ partial "social.html" . }}
+        <a href="#formSection" class="button">Submit a Profile or Job &rsaquo;</a>
+    </ul>
 
 </header>

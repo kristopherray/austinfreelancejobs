@@ -1,18 +1,17 @@
 baseURL:
 languageCode: en-us
-title: Naked Hugo
+title: Austin Freelance Jobs
 taxonomies:
-  category: categories
-  section_category: section_categories
+  tag: tags
 enableRobotsTXT: true
 paginate: 1
 params:
-  twitter_user: kris_ray
-  twitter_link: https://twitter.com/
-  facebook_link: http://www.facebook.com/
-  instagram_link: https://www.instagram.com/
+  #twitter_user: kris_ray
+  #twitter_link: https://twitter.com/
+  facebook_link: http://www.facebook.com/groups/austinfreelancejobs/
+  #instagram_link: https://www.instagram.com/
   #gtm: GTM-123456
-  paid_for: Paid for by Language - Kristopher Ray Creative
+  #paid_for: Paid for by Language - Kristopher Ray Creative
   form_endpoint: 123456
 markup:
   goldmark:
@@ -40,7 +39,13 @@ menu:
   main:
     - name: Home
       url: /
+      weight: -30
+    - name: Browse Freelancers
+      url: /#browse
       weight: -20
-    - name: News
-      url: /news/
+    - name: Resources
+      url: /resources/
       weight: -10
+    - name: Job Board
+      url: /jobs/
+      weight: -5
