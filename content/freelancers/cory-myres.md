@@ -1,4 +1,5 @@
 ---
+visible: true
 title: Cory Myres
 website: gravir.consulting
 linkedin: https://www.linkedin.com/company/gravir-strategy/

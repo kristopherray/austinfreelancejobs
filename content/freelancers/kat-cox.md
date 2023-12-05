@@ -1,4 +1,5 @@
 ---
+visible: true
 title: Kat Cox
 website: katcox.com
 #linkedin: https://www.linkedin.com/in/kristopherray/

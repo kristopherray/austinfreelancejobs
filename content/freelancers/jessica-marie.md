@@ -1,4 +1,5 @@
 ---
+visible: true
 title: Jessica Marie
 website: jessconnects.com
 linkedin: https://www.linkedin.com/in/jessica-allen-0b01831a/

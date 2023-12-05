@@ -1,4 +1,5 @@
 ---
+visible: true
 title: Lani Rosales
 website: theamericangenius.com/author/lani
 linkedin: https://www.linkedin.com/in/lanirosales/

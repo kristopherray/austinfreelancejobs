@@ -1,4 +1,5 @@
 ---
+visible: true
 title: Rachel Peterson
 website: plantladyprose.com
 #linkedin: https://www.linkedin.com/company/gravir-strategy/
