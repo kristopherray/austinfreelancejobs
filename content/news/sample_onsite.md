@@ -1,5 +1,5 @@
 ---
-title: Title of Post
+title: Sample Post (Drafted)
 description: >-
    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in consectetur orci. Aliquam nec ante ultrices, maximus nulla ac, imperdiet dui.
 date: 2022-12-05
