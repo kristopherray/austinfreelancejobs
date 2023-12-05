@@ -22,7 +22,7 @@ collections:
       - {label: "Visible in CMS", name: "visible", widget: hidden, default: true}
       - {label: "Freelancer Entry Name", name: "title", widget: "string"}
       - {label: "Website URL (no HTTPS:// needed)", name: "website", widget: "string"}
-      - {label: "LinkedIn URL (INCLUDE https://)", name: "website", widget: "string", required: false}
+      - {label: "LinkedIn URL (INCLUDE https://)", name: "linkedin", widget: "string", required: false}
       - {label: "Profile Image", name: "image", widget: "image", required: false}
       - {label: "Categories", name: "tags", widget: "list", summary: "{{fields.category}}", field: { label: "Category", name: "tag", widget: "string" }}
       - {label: "Body", name: "body", widget: "markdown", required: false}
