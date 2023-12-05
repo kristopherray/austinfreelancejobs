@@ -1,6 +1,6 @@
 ---
 visible: true
-title: Rachel Gozhansky
+title: Jacob Stone
 website: jacobtstone.com
 #linkedin: https://www.linkedin.com/company/gravir-strategy/
 tags: 
