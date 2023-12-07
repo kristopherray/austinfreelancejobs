@@ -1180,3 +1180,17 @@ footer {
     display: none;
   }
 }
+
+#policiesPage {
+  main {
+    a {
+      background:none;
+      font-weight:400;
+
+      &:hover, &:focus {
+        color: $default;
+        background: $yellow;
+      }
+    }
+  }
+}
