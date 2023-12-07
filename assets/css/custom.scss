@@ -481,6 +481,12 @@ header {
         background: $yellow;
         border-color: $yellow;
         color: #111;
+
+        span {
+          @media(max-width:767px){
+            display:none;
+          }
+        }
       }
   }
 }
@@ -1165,5 +1171,11 @@ footer {
         margin: 0 8px 8px 0;
       }
     }
+  }
+}
+
+#thankyouPage {
+  main {
+    display: none;
   }
 }
