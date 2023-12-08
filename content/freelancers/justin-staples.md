@@ -3,7 +3,7 @@ visible: true
 title: Justin Staples
 website: js-interactive.com
 linkedin: https://www.linkedin.com/in/justinadamstaples/
-image: /img/freelancers/headshot-x1000.png
+image: /img/freelancers/justin-staples.png
 tags:
   - Digital Marketing
   - Digital Strategy
