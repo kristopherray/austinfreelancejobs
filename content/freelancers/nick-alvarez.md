@@ -3,7 +3,7 @@ visible: true
 title: Nick Alvarez
 website: nickavmedia.weebly.com
 #linkedin: https://www.linkedin.com/in/briana-gutierrez-162233160/
-#image: /img/freelancers/briana-gutierrez.png
+image: /img/freelancers/nick-alvarez.jpg
 tags: 
     - Photography
 ---
